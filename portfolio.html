@@ -342,3 +342,16 @@
     </footer>
   </body>
 </html>
+
+input[type="checkbox"]:checked + .checkbox-text .checkbox-box {
+background-color: var(--pressed-state-color); border: none; fill: var(--cloud);
+...html:
+<label for="user-privacy" class="checkbox-text">
+  <span class="checkbox-box">
+    <svg width="10" height="8" class="checkbox-icon">
+      <use href="./images/icons.svg#icon-vector"></use>
+    </svg>
+  </span>
+  I accept the terms and conditions of the
+  <a href="" class="checkbox-link">Privacy Policy</a>
+</label>
