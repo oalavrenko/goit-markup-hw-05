@@ -646,6 +646,7 @@ img {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .modal-close-btn {
@@ -759,12 +760,12 @@ img {
 }
 
 .modal-title {
-  margin-top: 72px;
   font-weight: 500;
   letter-spacing: 0.32px;
   color: #2e2f42;
   text-align: center;
   margin-bottom: 16px;
+  line-height: 1.5;
 }
 
 .modal-form {
@@ -784,14 +785,12 @@ img {
 
 .modal-form-cont {
   position: relative;
-  margin-left: 24px;
-  margin-right: 24px;
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .modal-form-text-cont {
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom: 16px;
 }
 
 .modal-form-input {
@@ -800,9 +799,15 @@ img {
   border-radius: 4px;
   border: 1px solid #2e2f42;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-left: 38px;
+
   background-color: transparent;
   outline: transparent;
+}
+
+.modal-form-input-cont {
+  position: relative;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  
 }
 
 .modal-form-textarea {
@@ -815,7 +820,9 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 12px;
   line-height: 1.17;
+  color: rgba(46, 47, 66, 0.4);
   letter-spacing: 0.48px;
+  border: 1px solid rgba(46, 47, 66, 0.4)
   color: #2e2f42;
   background-color: transparent;
   outline: transparent;
@@ -853,7 +860,7 @@ img {
   position: absolute;
   top: 50%;
   left: 16px;
-  padding-top: 14px;
+
   transform: translateY(-50%);
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -890,6 +897,7 @@ img {
 }
 .modal-checkbox-input-cont {
   margin-bottom: 24px;
+  margin-top: 16px;
 }
 
 .modal-checkbox {
@@ -909,9 +917,14 @@ img {
   border: 1px solid #2e2f42;
   border-radius: 2px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-left: 24px;
+  border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-checkbox-cont:checked {
+  background-color: #404bbf; 
+  border: none;
 }
 
 .modal-form-link {
@@ -920,9 +933,8 @@ img {
 .modal-form-button {
   display: block;
   min-width: 169px;
+  cursor: pointer;
   height: 56px;
-  padding: 16px 32px;
-  border: none;
   border-radius: 4px;
   background-color: #4d5ae5;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -932,8 +944,9 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
   line-height: 1.5;
-  margin-left: 119px;
-  margin-right: 120px;
+  margin-left: 96px;
+  margin-right: 96px;
+  cursor: pointer;
 }
 
 .modal-form-button-cont {
@@ -955,6 +968,8 @@ img {
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .form-footer {
   display: flex;
